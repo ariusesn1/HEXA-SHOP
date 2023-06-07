@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<taglib version="2.0" xmlns="http://java.sun.com/xml/ns/j2ee"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j2ee/web-jsptaglibrary_2_0.xsd">
+ <tlib-version>1.0</tlib-version>
+ <short-name>loaddata</short-name>
+ <uri>/WEB-INF/laydulieu</uri>
+ <function>
+  <name>findById</name>
+  <function-class>com.fpltn.dao.SanPhamDao</function-class>
+  <function-signature>com.fpltn.entities.Sanpham findById(int)</function-signature>
+ </function>
+ <function>
+  <name>getAllSanpham</name>
+  <function-class>com.fpltn.dao.SanPhamDao</function-class>
+  <function-signature>java.util.List getSanpham()</function-signature>
+ </function>
+ <function>
+  <name>getAllSanphamPhanTrang</name>
+  <function-class>com.fpltn.dao.SanPhamDao</function-class>
+  <function-signature>java.util.List getSanpham(int, int)</function-signature>
+ </function>
+ <function>
+  <name>getAllSanphamPhanTrangPriceUp</name>
+  <function-class>com.fpltn.dao.SanPhamDao</function-class>
+  <function-signature>java.util.List getSanphamPriceUp(int, int)</function-signature>
+ </function>
+ <function>
+  <name>getAllSanphamPhanTrangPriceDown</name>
+  <function-class>com.fpltn.dao.SanPhamDao</function-class>
+  <function-signature>java.util.List getSanphamPriceDown(int, int)</function-signature>
+ </function>
+  <function>
+  <name>getTotalByKeyword</name>
+  <function-class>com.fpltn.dao.SanPhamDao</function-class>
+  <function-signature>Long getTotalByKeyword(java.lang.String)</function-signature>
+ </function>
+ <function>
+  <name>demSanpham</name>
+  <function-class>com.fpltn.dao.SanPhamDao</function-class>
+  <function-signature>Long DemSoLuongSanpham()</function-signature>
+ </function>
+ <function>
+  <name>timKiemSanPham</name>
+  <function-class>com.fpltn.dao.SanPhamDao</function-class>
+  <function-signature>java.util.List timKiem(java.lang.String)</function-signature>
+ </function>
+ <function>
+  <name>search</name>
+  <function-class>com.fpltn.dao.SanPhamDao</function-class>
+  <function-signature>java.util.List timKiem(java.lang.String,int,int)</function-signature>
+ </function>
+ <function>
+  <name>findByIdAcc</name>
+  <function-class>com.fpltn.dao.AccountDao</function-class>
+  <function-signature>com.fpltn.entities.Account findById(int)</function-signature>
+ </function>
+ <function>
+  <name>getAllAccount</name>
+  <function-class>com.fpltn.dao.AccountDao</function-class>
+  <function-signature>java.util.List getAccount()</function-signature>
+ </function>
+ 	<function>
+		<name>findByIdDM</name>
+		<function-class>com.fpltn.dao.DanhMucDao</function-class>
+		<function-signature>com.fpltn.entities.Danhmuc findById(int)</function-signature>
+	</function>
+	<function>
+		<name>getAllDanhMuc</name>
+		<function-class>com.fpltn.dao.DanhMucDao</function-class>
+		<function-signature>java.util.List getDanhMuc()</function-signature>
+	</function>
+	<function>
+		<name>getAllDanhMucPhanTrang</name>
+		<function-class>com.fpltn.dao.DanhMucDao</function-class>
+		<function-signature>java.util.List getDanhMuc(int, int)</function-signature>
+	</function>
+	<function>
+		<name>demDanhMuc</name>
+		<function-class>com.fpltn.dao.DanhMucDao</function-class>
+		<function-signature>Long DemSoLuongDanhMuc()</function-signature>
+	</function>
+	<function>
+		<name>timKiemDanhMuc</name>
+		<function-class>com.fpltn.dao.DanhMucDao</function-class>
+		<function-signature>java.util.List timKiem(java.lang.String)</function-signature>
+	</function>
+</taglib>

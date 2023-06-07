@@ -1,0 +1,19 @@
+@charset "UTF-8";
+
+.frmDanhMuc {
+	width: 300px;
+	margin: 20px auto;
+	padding: 50px;
+	
+}
+
+.frmDanhMuc .row {
+	height: 30px;
+}
+
+.frmDanhMuc .row label {
+	float: left;
+	width: 150px;
+	margin-right: 10px;
+	text-align: left;
+}
